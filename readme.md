@@ -1,13 +1,14 @@
 # hexo-cdn-jsdelivr-plus
 
-English | [简体中文](./readme-cn.md)
+简体中文 | [English](./readme.md)
 
 插件基于hexo-cdn-jsdelivr修改得来，使用hexo-asset-image插件添加前缀会报错和失效，修改后支持下列markdown语法:
 - `![](img.png)`
 - `<img src="img.png">`
-不再支持：
-- `{% asset_img <图片名> [图片注解] %}`
-
+新增支持语法：
+{% image 链接 %} 
+{% inlineImg [src] %}
+同时插件不再将图片渲染为html代码,只负责识别相对路径图片并替换为CDN链接。
 使用：
 
 ```shell
