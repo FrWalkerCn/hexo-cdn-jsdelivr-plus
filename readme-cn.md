@@ -9,8 +9,11 @@
 {% image 链接 %} 
 {% inlineImg [src] %}
 同时插件不再将图片渲染为html代码,只负责识别相对路径图片并替换为CDN链接。
-使用：
 
+1.0.3-20250607更新：
+- 将post的图片资源生成路径从post-assets改为_posts,和原有的父目录同名方便备份
+  
+使用：
 ```shell
 $ npm install hexo-cdn-jsdelivr-plus --save
 ```
