@@ -13,6 +13,8 @@
 1.0.3-20250607更新：
 - 将post的图片资源生成路径从post-assets改为_posts,和原有的父目录同名方便备份
   
+1.0.4-20251019更新：
+- 兼容图片源已经含有_posts内相对路径时的情况，方便vscode复制图片到md时直接进对应路径
 使用：
 ```shell
 $ npm install hexo-cdn-jsdelivr-plus --save
